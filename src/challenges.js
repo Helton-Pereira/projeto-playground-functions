@@ -13,7 +13,7 @@ function calcArea(base, height) {
 // Desafio 3
 function splitSentence(string) {
   let fraseDividida = [];
-  fraseDividida = string.split(" ");
+  fraseDividida = string.split(' ');
   return fraseDividida;
 }
 
@@ -82,11 +82,43 @@ function fizzBuzz(numbers) {
   }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(stringFrase) {
+  let codigo = '';
+  for (let index3 = 0; index3 < stringFrase.length; index3 += 1) {
+    if (stringFrase[index3] === 'a') {
+      codigo += '1';
+    } else if (stringFrase[index3] === 'e') {
+      codigo += '2';
+    } else if (stringFrase[index3] === 'i') {
+      codigo += '3';
+    } else if (stringFrase[index3] === 'o') {
+      codigo += '4';
+    } else if (stringFrase[index3] === 'u') {
+      codigo += '5';
+    } else {
+      codigo += stringFrase[index3];
+    }
+  }
+      return codigo;
 }
-function decode() {
-  // seu código aqui
+function decode(stringCodigo) {
+  let decifrado = '';
+  for (let index4 = 0; index4 < stringCodigo.length; index4 += 1) {
+    if (stringCodigo[index4] === '1') {
+      decifrado += 'a';
+    } else if (stringCodigo[index4] === '2') {
+      decifrado += 'e';
+    } else if (stringCodigo[index4] === '3') {
+      decifrado += 'i';
+    } else if (stringCodigo[index4] === '4') {
+      decifrado += 'o';
+    } else if (stringCodigo[index4] === '5') {
+      decifrado += 'u';
+    } else {
+      decifrado += stringCodigo[index4];
+    }
+  }
+      return decifrado;
 }
 
 // Desafio 10
