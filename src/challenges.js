@@ -122,8 +122,8 @@ function decode(stringCodigo) {
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(tecnoligias, pessoa) {
+
 }
 
 module.exports = {
